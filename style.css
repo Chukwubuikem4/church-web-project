@@ -107,8 +107,110 @@ ul.main-navigation a.im-new:hover{
 }
 
 .hamburger{
-  display: none;
-}
+    display: none;
+    cursor: pointer;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+    z-index: 10px;
+    margin-top: 3rem;
+    margin-right: 2rem;
+    transition: all 0.25s;
+  }
+
+  .hamburger-top,
+  .hamburger-middle,
+  .hamburger-bottom{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: rgb(228, 219, 219);
+    transition: all 0.5s;
+    transform: rotate(0)
+  }
+
+  .hamburger-middle{
+    transform: translateY(7px);
+  }
+
+  .hamburger-bottom{
+    transform: translateY(14px);
+  }
+
+  .open .hamburger-top{
+    transform: rotate(45deg) translateY(6px) translateX(6px)
+  }
+
+  .open .hamburger-middle{
+    display: none;
+  }
+
+  .open .hamburger-bottom{
+    transform: rotate(-45deg) translateY(6px) translateX(-6px)
+  }
+
+  .mobile-menu{
+    position: fixed;
+    top: 111px;
+    right: 0;
+    background-color: rgb(228, 219, 219);
+    width: 90vw;
+    height: 80vh;
+    color: #333;
+    padding: 2rem;
+    box-shadow: 2px 3px 6px 1.7px rgba(65, 64, 64, 0.774);
+    transition: all 0.3s;
+  }
+
+  .mobile-menu ul{
+    line-height: 3;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+  }
+
+  .mobile-menu li{
+    list-style: none;
+  }
+
+  .mobile-menu div{
+    margin-top: 20px;
+  }
+
+  .mobile-menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Fraunces';
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+
+  .hidden{
+    transform: translateX(100%);
+  }
+
+  .no-scroll{
+    overflow: hidden;
+  }
+
+  .mobile-menu a.new{
+    margin:  3px;
+    padding: 1rem 1.7rem ;
+    text-decoration: none;
+    color: rgb(228, 219, 219);
+    background-color: #333;
+    border: 2px solid #333;
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-duration: 1s;
+    text-align: center;
+    font-size: 1.4rem;
+  }
 
 #main-header{
   height: 100vh;
@@ -467,10 +569,6 @@ footer h5{
     font-size: 0.7rem;
   }
   
-  .mobile-menu{
-    display: none;
-  }
-
   .event-a a, .event-b a, .event-c a{
     padding: 1rem;
   }
@@ -565,111 +663,9 @@ footer h5{
   .logo-text h4{
     font-size: 1.3em;
   }
-
+  
   .hamburger{
     display: block;
-    cursor: pointer;
-    position: relative;
-    width: 30px;
-    height: 30px;
-    background: none;
-    border: none;
-    z-index: 10px;
-    margin-top: 3rem;
-    margin-right: 2rem;
-    transition: all 0.25s;
-  }
-
-  .hamburger-top,
-  .hamburger-middle,
-  .hamburger-bottom{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 30px;
-    height: 2px;
-    background-color: rgb(228, 219, 219);
-    transition: all 0.5s;
-    transform: rotate(0)
-  }
-
-  .hamburger-middle{
-    transform: translateY(7px);
-  }
-
-  .hamburger-bottom{
-    transform: translateY(14px);
-  }
-
-  .open .hamburger-top{
-    transform: rotate(45deg) translateY(6px) translateX(6px)
-  }
-
-  .open .hamburger-middle{
-    display: none;
-  }
-
-  .open .hamburger-bottom{
-    transform: rotate(-45deg) translateY(6px) translateX(-6px)
-  }
-
-  .mobile-menu{
-    position: fixed;
-    top: 111px;
-    right: 0;
-    background-color: rgb(228, 219, 219);
-    width: 90vw;
-    height: 80vh;
-    color: #333;
-    padding: 2rem;
-    box-shadow: 2px 3px 6px 1.7px rgba(65, 64, 64, 0.774);
-    transition: all 0.3s;
-  }
-
-  .mobile-menu ul{
-    line-height: 3;
-    border-bottom: 1px solid #333;
-    padding-bottom: 10px;
-    margin-bottom: 50px;
-  }
-
-  .mobile-menu li{
-    list-style: none;
-  }
-
-  .mobile-menu div{
-    margin-top: 20px;
-  }
-
-  .mobile-menu a{
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: 'Fraunces';
-    color: #333;
-    font-size: 1.5rem;
-    font-weight: bolder;
-  }
-
-  .hidden{
-    transform: translateX(100%);
-  }
-
-  .no-scroll{
-    overflow: hidden;
-  }
-
-  .mobile-menu a.new{
-    margin:  3px;
-    padding: 1rem 1.7rem ;
-    text-decoration: none;
-    color: rgb(228, 219, 219);
-    background-color: #333;
-    border: 2px solid #333;
-    transition-property: all;
-    transition-timing-function: ease;
-    transition-duration: 1s;
-    text-align: center;
-    font-size: 1.4rem;
   }
 
   header #main-header{
