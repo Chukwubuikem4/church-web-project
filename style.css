@@ -677,21 +677,21 @@ footer h5{
   }
   
   #main-header h1{
-    font-size: 3.3rem;
+    font-size: 2.8rem;
     text-align: center;
     padding-top: 2em;
     margin: 0 auto;
   }
   
   #main-header h3{
-    font-size: 2rem;
+    font-size: 1.7rem;
     max-width: 60rem;
     margin: 3rem auto;
     padding: 0 3rem;
   }
   
   #main-header h4{
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding: 0 3rem;
     margin-bottom: 3rem;
   }
@@ -772,7 +772,7 @@ footer h5{
   section#C {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 40vh 35vh;
+    grid-template-rows: 65vh 35vh;
     margin: 1rem 0rem;
     max-width: 100vw;
     background-color: #333;
@@ -781,7 +781,7 @@ footer h5{
 
   section#D {
     grid-template-columns: auto;
-    grid-template-rows: 45vh 17vh;
+    grid-template-rows: 50vh 17vh;
     padding-bottom: 10rem;
   }
   
@@ -818,39 +818,6 @@ footer h5{
     width: 20rem;
     margin: 0 auto;
   }
-  
-  footer a{
-    color: #333;
-    text-decoration: none;
-    margin: 0 0.7rem;
-  }
-  
-  footer i{
-    font-size: 1.5rem;
-    transition-property: all;
-    transition-duration: .5s;
-    transition-timing-function: ease-in;
-  }
-  
-  footer i:hover{
-    font-size: 2rem;
-  }
-  
-  footer h3{
-    text-align: center;
-    font-family: 'Fraunces';
-    text-transform: uppercase;
-  }
-  
-  footer h5{
-    text-align: center;
-    font-family: 'Fraunces';
-    margin-top: 1rem;
-  }
-  
-  
- 
-  
   
 }
 
